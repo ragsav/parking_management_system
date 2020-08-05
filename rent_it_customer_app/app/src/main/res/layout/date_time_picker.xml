@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/scroll_view"
+        android:background="#ffffff">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content">
+
+
+            <TimePicker
+                android:id="@+id/time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:numbersBackgroundColor="#000000"
+                android:numbersTextColor="@color/white"
+                android:amPmTextColor="#262626"
+                android:headerBackground="#000000"
+                android:numbersSelectorColor="#66ffff" />
+
+            <NumberPicker
+                android:id="@+id/numberPicker"
+
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/date_time_set"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center|bottom"
+                android:layout_weight="4"
+                android:clickable="true"
+                android:elevation="20dp"
+                android:src="@drawable/front_arrow"
+                android:layout_marginBottom="10dp"
+                app:backgroundTint="@color/white"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progress_bar"
+        android:visibility="invisible">
+
+    </ProgressBar>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

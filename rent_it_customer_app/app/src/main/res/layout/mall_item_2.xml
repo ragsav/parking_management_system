@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="3dp"
+    android:layout_marginStart="3dp"
+    android:layout_marginTop="8dp"
+    app:cardCornerRadius="3dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:padding="10dp"
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/li"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="start">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_gravity="start"
+                        android:textColor="@color/black"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="20dp"
+                        android:text="TextView" />
+
+                    <ImageView
+                        android:id="@+id/location"
+                        android:clickable="true"
+                        android:paddingTop="15dp"
+                        android:layout_gravity="end"
+                        android:layout_width="45dp"
+                        android:src="@drawable/placeholder"
+                        android:layout_height="45dp">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/li2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="0dp"
+                    android:gravity="end"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/book"
+
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/button_green"
+                        android:text="Book!"
+                        android:textColor="@color/white"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
