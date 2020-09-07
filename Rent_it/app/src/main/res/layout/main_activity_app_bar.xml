@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/tertiary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topAppBar"
+        android:elevation="16dp"
+        app:navigationIcon="@drawable/avatar"
+        android:background="@color/secondary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Rent it"
+        app:titleTextColor="@color/tertiary"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/search_view_expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:el_duration="500"
+        app:el_expanded="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="8dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:id="@+id/search_input_layout"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/cross"
+                app:endIconTint="@color/secondary"
+                app:endIconTintMode="src_atop"
+                android:gravity="center"
+                app:placeholderText="Search parking lots"
+                app:placeholderTextAppearance="@font/baloon"
+                app:placeholderTextColor="@color/LightSlateGray"
+                app:boxStrokeColor="@color/secondary"
+                app:boxStrokeWidth="1dp"
+                android:layout_marginBottom="8dp"
+                app:startIconTint="@color/secondary"
+                app:startIconTintMode="src_atop"
+                app:startIconDrawable="@drawable/search_dark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/search_input_field"
+                    android:textColor="@color/Black"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:focusedByDefault="false">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+</LinearLayout>

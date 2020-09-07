@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Activities.AreaSelectorActivity">
+    <LinearLayout
+        android:background="@color/secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/topAppBar"
+            android:elevation="16dp"
+            app:navigationIcon="@drawable/back"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Rent it"
+            app:titleTextColor="@color/tertiary"
+            >
+
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+    <ListView
+        android:divider="@color/primary"
+        android:dividerHeight="1dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:id="@+id/area_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>
